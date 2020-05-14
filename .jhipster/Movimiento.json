@@ -1,0 +1,40 @@
+{
+    "name": "Movimiento",
+    "fields": [
+        {
+            "fieldName": "tipo",
+            "fieldType": "TipoMovimiento",
+            "fieldValues": "ENTRADA,SALIDA,MODIFICACION"
+        },
+        {
+            "fieldName": "fecha",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "sucursal",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "motivo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "observacion",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200514202100",
+    "entityTableName": "movimiento",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": [
+        "fleastore"
+    ]
+}

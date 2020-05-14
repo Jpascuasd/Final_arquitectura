@@ -1,0 +1,11 @@
+version: '2'
+services:
+  fleastore-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/fleastore/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=fleastore
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432

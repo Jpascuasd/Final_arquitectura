@@ -1,0 +1,10 @@
+{
+  "fleastoreApp": {
+    "TipoFactura": {
+      "null": "",
+      "COMPRA": "COMPRA",
+      "VENTA": "VENTA",
+      "DEVOLUCION": "DEVOLUCION"
+    }
+  }
+}

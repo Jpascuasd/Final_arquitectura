@@ -1,0 +1,25 @@
+{
+  "fleastoreApp": {
+    "abono": {
+      "home": {
+        "title": "Abonos",
+        "createLabel": "Create a new Abono",
+        "createOrEditLabel": "Create or edit a Abono",
+        "notFound": "No Abonos found"
+      },
+      "created": "A new Abono is created with identifier {{ param }}",
+      "updated": "A Abono is updated with identifier {{ param }}",
+      "deleted": "A Abono is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Abono {{ id }}?"
+      },
+      "detail": {
+        "title": "Abono"
+      },
+      "usuario": "Usuario",
+      "fecha": "Fecha",
+      "codigo": "Codigo",
+      "cantidadValor": "Cantidad Valor"
+    }
+  }
+}

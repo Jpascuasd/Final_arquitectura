@@ -1,0 +1,29 @@
+{
+  "fleastoreApp": {
+    "factura": {
+      "home": {
+        "title": "Facturas",
+        "createLabel": "Create a new Factura",
+        "createOrEditLabel": "Create or edit a Factura",
+        "notFound": "No Facturas found"
+      },
+      "created": "A new Factura is created with identifier {{ param }}",
+      "updated": "A Factura is updated with identifier {{ param }}",
+      "deleted": "A Factura is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Factura {{ id }}?"
+      },
+      "detail": {
+        "title": "Factura"
+      },
+      "codigo": "Codigo",
+      "estado": "Estado",
+      "fecha": "Fecha",
+      "modoPago": "Modo Pago",
+      "tipoFactura": "Tipo Factura",
+      "fechaPago": "Fecha Pago",
+      "cantidad": "Cantidad",
+      "sucursal": "Sucursal"
+    }
+  }
+}

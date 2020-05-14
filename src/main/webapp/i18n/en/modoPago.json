@@ -1,0 +1,10 @@
+{
+  "fleastoreApp": {
+    "ModoPago": {
+      "null": "",
+      "EFECTIVO": "EFECTIVO",
+      "TARJETA_CREDITO": "TARJETA_CREDITO",
+      "GIRO": "GIRO"
+    }
+  }
+}

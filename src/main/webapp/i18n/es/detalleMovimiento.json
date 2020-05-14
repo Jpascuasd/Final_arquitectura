@@ -1,0 +1,26 @@
+{
+  "fleastoreApp": {
+    "detalleMovimiento": {
+      "home": {
+        "title": "Detalle Movimientos",
+        "createLabel": "Crear nuevo Detalle Movimiento",
+        "createOrEditLabel": "Crear o editar Detalle Movimiento",
+        "notFound": "Ningún Detalle Movimientos encontrado"
+      },
+      "created": "Un nuevo Detalle Movimiento ha sido creado con el identificador {{ param }}",
+      "updated": "Un Detalle Movimiento ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Detalle Movimiento ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Detalle Movimiento {{ id }}?"
+      },
+      "detail": {
+        "title": "Detalle Movimiento"
+      },
+      "codigo": "Codigo",
+      "nombre": "Nombre",
+      "producto": "Producto",
+      "cantidad": "Cantidad",
+      "fecha": "Fecha"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "fleastoreApp": {
+    "TipoMovimiento": {
+      "null": "",
+      "ENTRADA": "ENTRADA",
+      "SALIDA": "SALIDA",
+      "MODIFICACION": "MODIFICACION"
+    }
+  }
+}

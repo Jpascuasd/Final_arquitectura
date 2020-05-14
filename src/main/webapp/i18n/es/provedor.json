@@ -1,0 +1,22 @@
+{
+  "fleastoreApp": {
+    "provedor": {
+      "home": {
+        "title": "Provedors",
+        "createLabel": "Crear nuevo Provedor",
+        "createOrEditLabel": "Crear o editar Provedor",
+        "notFound": "Ningún Provedors encontrado"
+      },
+      "created": "Un nuevo Provedor ha sido creado con el identificador {{ param }}",
+      "updated": "Un Provedor ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Provedor ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Provedor {{ id }}?"
+      },
+      "detail": {
+        "title": "Provedor"
+      },
+      "codigo": "Codigo"
+    }
+  }
+}

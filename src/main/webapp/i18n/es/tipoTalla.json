@@ -1,0 +1,22 @@
+{
+  "fleastoreApp": {
+    "tipoTalla": {
+      "home": {
+        "title": "Tipo Tallas",
+        "createLabel": "Crear nuevo Tipo Talla",
+        "createOrEditLabel": "Crear o editar Tipo Talla",
+        "notFound": "Ningún Tipo Tallas encontrado"
+      },
+      "created": "Un nuevo Tipo Talla ha sido creado con el identificador {{ param }}",
+      "updated": "Un Tipo Talla ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Tipo Talla ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Tipo Talla {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipo Talla"
+      },
+      "nombre": "Nombre"
+    }
+  }
+}

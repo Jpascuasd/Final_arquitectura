@@ -1,0 +1,58 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="factura">
+            <h2><span jhiTranslate="fleastoreApp.factura.detail.title">Factura</span> {{ factura.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="fleastoreApp.factura.codigo">Codigo</span></dt>
+                <dd>
+                    <span>{{ factura.codigo }}</span>
+                </dd>
+                <dt><span jhiTranslate="fleastoreApp.factura.estado">Estado</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'fleastoreApp.FacturaEstado.' + factura.estado }}">{{ factura.estado }}</span>
+                </dd>
+                <dt><span jhiTranslate="fleastoreApp.factura.fecha">Fecha</span></dt>
+                <dd>
+                    <span>{{ factura.fecha }}</span>
+                </dd>
+                <dt><span jhiTranslate="fleastoreApp.factura.modoPago">Modo Pago</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'fleastoreApp.ModoPago.' + factura.modoPago }}">{{ factura.modoPago }}</span>
+                </dd>
+                <dt><span jhiTranslate="fleastoreApp.factura.tipoFactura">Tipo Factura</span></dt>
+                <dd>
+                    <span jhiTranslate="{{ 'fleastoreApp.TipoFactura.' + factura.tipoFactura }}">{{ factura.tipoFactura }}</span>
+                </dd>
+                <dt><span jhiTranslate="fleastoreApp.factura.fechaPago">Fecha Pago</span></dt>
+                <dd>
+                    <span>{{ factura.fechaPago }}</span>
+                </dd>
+                <dt><span jhiTranslate="fleastoreApp.factura.cantidad">Cantidad</span></dt>
+                <dd>
+                    <span>{{ factura.cantidad }}</span>
+                </dd>
+                <dt><span jhiTranslate="fleastoreApp.factura.sucursal">Sucursal</span></dt>
+                <dd>
+                    <span>{{ factura.sucursal }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/factura', factura.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

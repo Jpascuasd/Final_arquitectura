@@ -1,0 +1,68 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="fleastoreApp.lista.home.title">Listas</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-lista" [routerLink]="['/lista/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="fleastoreApp.lista.home.createLabel">
+            Create a new Lista
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="listas?.length === 0">
+        <span jhiTranslate="fleastoreApp.lista.home.notFound">No listas found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="listas?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="fleastoreApp.lista.nombre">Nombre</span></th>
+                    <th scope="col" ><span jhiTranslate="fleastoreApp.lista.codigo">Codigo</span></th>
+                    <th scope="col" ><span jhiTranslate="fleastoreApp.lista.descripcion">Descripcion</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let lista of listas ;trackBy: trackId">
+                    <td><a [routerLink]="['/lista', lista.id, 'view']">{{ lista.id }}</a></td>
+                    <td>{{ lista.nombre }}</td>
+                    <td>{{ lista.codigo }}</td>
+                    <td>
+                        <a *ngIf="lista.descripcion" (click)="openFile(lista.descripcionContentType, lista.descripcion)" jhiTranslate="entity.action.open">open</a>
+                        <span *ngIf="lista.descripcion">{{ lista.descripcionContentType }}, {{ byteSize(lista.descripcion) }}</span>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/lista', lista.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/lista', lista.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(lista)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

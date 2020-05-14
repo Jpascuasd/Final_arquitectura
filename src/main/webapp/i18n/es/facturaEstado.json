@@ -1,0 +1,10 @@
+{
+  "fleastoreApp": {
+    "FacturaEstado": {
+      "null": "",
+      "PAGADO": "PAGADO",
+      "PENDIENTE": "PENDIENTE",
+      "CANCELADO": "CANCELADO"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "fleastoreApp": {
+    "detalleFactura": {
+      "home": {
+        "title": "Detalle Facturas",
+        "createLabel": "Crear nuevo Detalle Factura",
+        "createOrEditLabel": "Crear o editar Detalle Factura",
+        "notFound": "Ningún Detalle Facturas encontrado"
+      },
+      "created": "Un nuevo Detalle Factura ha sido creado con el identificador {{ param }}",
+      "updated": "Un Detalle Factura ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Detalle Factura ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Detalle Factura {{ id }}?"
+      },
+      "detail": {
+        "title": "Detalle Factura"
+      },
+      "producto": "Producto",
+      "codigoProducto": "Codigo Producto",
+      "cantidad": "Cantidad"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fleastoreApp": {
+    "talla": {
+      "home": {
+        "title": "Tallas",
+        "createLabel": "Crear nuevo Talla",
+        "createOrEditLabel": "Crear o editar Talla",
+        "notFound": "Ningún Tallas encontrado"
+      },
+      "created": "Un nuevo Talla ha sido creado con el identificador {{ param }}",
+      "updated": "Un Talla ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Talla ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Talla {{ id }}?"
+      },
+      "detail": {
+        "title": "Talla"
+      },
+      "nombre": "Nombre"
+    }
+  }
+}

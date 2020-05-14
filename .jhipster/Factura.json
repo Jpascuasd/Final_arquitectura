@@ -1,0 +1,55 @@
+{
+    "name": "Factura",
+    "fields": [
+        {
+            "fieldName": "codigo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "estado",
+            "fieldType": "FacturaEstado",
+            "fieldValues": "PAGADO,PENDIENTE,CANCELADO"
+        },
+        {
+            "fieldName": "fecha",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "modoPago",
+            "fieldType": "ModoPago",
+            "fieldValues": "EFECTIVO,TARJETA_CREDITO,GIRO"
+        },
+        {
+            "fieldName": "tipoFactura",
+            "fieldType": "TipoFactura",
+            "fieldValues": "COMPRA,VENTA,DEVOLUCION"
+        },
+        {
+            "fieldName": "fechaPago",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "cantidad",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "sucursal",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200514201800",
+    "entityTableName": "factura",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": [
+        "fleastore",
+        "facturacionmicroservicio"
+    ]
+}

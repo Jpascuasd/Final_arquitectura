@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="detalleFactura">
+            <h2><span jhiTranslate="fleastoreApp.detalleFactura.detail.title">Detalle Factura</span> {{ detalleFactura.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="fleastoreApp.detalleFactura.producto">Producto</span></dt>
+                <dd>
+                    <span>{{ detalleFactura.producto }}</span>
+                </dd>
+                <dt><span jhiTranslate="fleastoreApp.detalleFactura.codigoProducto">Codigo Producto</span></dt>
+                <dd>
+                    <span>{{ detalleFactura.codigoProducto }}</span>
+                </dd>
+                <dt><span jhiTranslate="fleastoreApp.detalleFactura.cantidad">Cantidad</span></dt>
+                <dd>
+                    <span>{{ detalleFactura.cantidad }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/detalle-factura', detalleFactura.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

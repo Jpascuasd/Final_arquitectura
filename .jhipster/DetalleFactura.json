@@ -1,0 +1,31 @@
+{
+    "name": "DetalleFactura",
+    "fields": [
+        {
+            "fieldName": "producto",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codigoProducto",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cantidad",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200514201900",
+    "entityTableName": "detalle_factura",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": [
+        "fleastore"
+    ]
+}

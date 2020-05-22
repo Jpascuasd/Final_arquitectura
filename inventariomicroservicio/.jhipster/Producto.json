@@ -1,0 +1,44 @@
+{
+    "name": "Producto",
+    "fields": [
+        {
+            "fieldName": "nombre",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "referencia",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codigo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "proveedor",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200514220700",
+    "entityTableName": "producto",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": [
+        "fleastore",
+        "inventariomicroservicio"
+    ],
+    "microserviceName": "inventariomicroservicio"
+}
